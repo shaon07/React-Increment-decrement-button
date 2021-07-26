@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './style.css';
+import AddIcon from '@material-ui/icons/Add';
+import DeleteForeverRoundedIcon from '@material-ui/icons/DeleteForeverRounded';
 
 function Test() {
   const [num, setNum] = useState(0);
@@ -19,8 +21,12 @@ function Test() {
         <div className="InnerDiv">
           <h1>{num}</h1>
           <div className="btnDiv">
-            <button onClick={inc}>Increment</button>
-            <button onClick={dec}>Decrement</button>
+            <button onClick={inc}>
+              <AddIcon />
+            </button>
+            <button onClick={dec}>
+              <DeleteForeverRoundedIcon />
+            </button>
           </div>
         </div>
       </div>
