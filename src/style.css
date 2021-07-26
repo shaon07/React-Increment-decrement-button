@@ -51,6 +51,7 @@ button {
   margin: 1%;
   cursor: pointer;
   transition: 0.5s all;
+  font-weight: bold;
 }
 button:hover {
   background-color: yellow;
