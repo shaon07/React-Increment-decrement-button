@@ -10,8 +10,12 @@ function Todo() {
   }
   function final() {
     finalName.push(name);
+    setName('');
     console.log(finalName);
   }
+  let todos = finalName.map((file, index) => {
+    return <Li text={file} key={index} />;
+  });
   return (
     <>
       <div className="mainDiv">
@@ -26,11 +30,7 @@ function Todo() {
             />
             <AddBoxIcon className="addBtn" onClick={final} />
             <div className="items">
-              <ul className="Ul">
-                {finalName.map((item, index) => {
-                  <Li text={item} />;
-                })}
-              </ul>
+              <ul className="Ul">{todos}</ul>
             </div>
           </div>
         </div>
