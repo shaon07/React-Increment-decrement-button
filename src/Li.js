@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Li() {
+function Li(props) {
   const [show, setSHow] = useState('block');
   function hideText() {
     return setSHow('none');
@@ -9,7 +9,7 @@ function Li() {
     <>
       <ol style={{ width: '100%' }}>
         <li className="list" style={{ display: show }}>
-          Hello world
+          {props.text}
           <span className="deleteBtn" onClick={hideText}>
             Delete
           </span>
