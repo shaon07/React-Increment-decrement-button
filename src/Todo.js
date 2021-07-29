@@ -9,7 +9,7 @@ function Todo() {
     setName(e.target.value);
   }
   function final() {
-    finalName.unshift(name);
+    finalName.push(name);
     setName('');
     console.log(finalName);
   }
