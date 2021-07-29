@@ -10,6 +10,7 @@ function Todo() {
   }
   function final() {
     finalName.push(name);
+    console.log(finalName);
   }
   return (
     <>
