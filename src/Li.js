@@ -1,10 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 function Li() {
+  const [show, setSHow] = useState('block');
+  function hideText() {
+    return setSHow('none');
+  }
   return (
     <>
-      <ol>
-        <li>Hello world</li>
+      <ol style={{ width: '100%' }}>
+        <li className="list" style={{ display: show }}>
+          Hello world
+          <span className="deleteBtn" onClick={hideText}>
+            Delete
+          </span>
+        </li>
       </ol>
     </>
   );
