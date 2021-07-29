@@ -9,7 +9,7 @@ function Todo() {
     setName(e.target.value);
   }
   function final() {
-    finalName.push(name);
+    finalName.unshift(name);
     setName('');
     console.log(finalName);
   }
@@ -30,7 +30,7 @@ function Todo() {
             />
             <AddBoxIcon className="addBtn" onClick={final} />
             <div className="items">
-              <ul className="Ul">{todos}</ul>
+              <div className="Ul">{todos}</div>
             </div>
           </div>
         </div>

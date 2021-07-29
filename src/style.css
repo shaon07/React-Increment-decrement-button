@@ -79,18 +79,20 @@ h2 {
   width: 100%;
   background-color: darkblue;
   padding: 10% 0;
+  overflow: hidden;
 }
 .list {
   color: red;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 15px;
   background-color: yellow;
   text-align: center;
-  padding: 3% 1%;
+  padding: 3% 25%;
   list-style-type: none;
   margin: 2% -25%;
   overflow: hidden;
   width: 100%;
+  justify-content: space-evenly;
 }
 .deleteBtn {
   background-color: red;
@@ -113,11 +115,14 @@ input {
   flex-wrap: wrap;
 }
 .Ul {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   width: 100%;
   text-align: center;
 }
 .items {
-  /* display: flex; */
+  display: flex;
   justify-content: center;
 }
