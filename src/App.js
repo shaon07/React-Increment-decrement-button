@@ -5,10 +5,11 @@ import Shaon from './Shaon';
 import ShaonTest from './shaonTest';
 import Li from './Li';
 import Todo from './Todo';
+import Counter from './Counter';
 export default function App() {
   return (
     <>
-      <Todo />
+      <Counter />
     </>
   );
 }
